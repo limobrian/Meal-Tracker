@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>New Meal</h2>
+  
+            <div class>
+              <label>Meal:</label>
+              <div >
+                <input  #MealName>
+              </div>
+            </div>
+            <div >
+              <label  for="">Description:</label>
+              <div >
+                <input  #MealDesc>
+              </div>
+            </div>
+            <div >
+              <label  for="">Calories:</label>
+              <div >
+                <input  #MealCalories>
+              </div>
+            </div>
+
+            <div >
+              <div >
+                <button (click)="
+                AddClicked(MealName.value, MealDesc.value, MealCalories.value);
+                MealName.value = '';
+                MealDesc.value = '';
+                MealCalories.value = '';
+                " class="btn btn-success">Add Meal</button>
+              </div>
+            </div>
+</div>
+<hr>
